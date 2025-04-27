@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3 align="center">To Do</h3>
+      <form class="form-control">
+        <div class="input-group mb-3 search">
+          <span class="input-group-text" id="basic-addon1"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></span>
+          <input
+            oninput="searchNote()"
+            id="searchInp"
+            type="text"
+            class="form-control"
+            placeholder="Search your notes"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Type your note here"
+          id="noteTxt"
+        />
+        <br />
+        <button type="button" class="btn btn-primary" id="addNote">
+          Add Note
+        </button>
+      </form>
+      <br />
+      <br />
+      <ul class="list-group" id="notes">
+        <li class="list-group-item" id="emptyList">No notes yet</li>
+        <li class="list-group-item" id="noNotes">No such note</li>
+      </ul>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/fontawwesome.js"></script>
+  </body>
+</html>
